@@ -1,35 +1,35 @@
-Markdown
-# Git Synchronization Guide 🛠️
+# 🚀 Simple Git Guide
 
-Use these commands to keep your local XAMPP files and the GitHub repository in sync.
+Follow these basic steps to sync your local XAMPP files with GitHub.
 
 ---
 
-### ⬇️ How to Pull (Get Latest Updates)
-Run this command before you start coding to make sure you have the most recent version from the cloud:
+### 1️⃣ Initial Setup (Do this once)
+If you are connecting your folder to GitHub for the first time:
 ```bash
-git pull origin main
-⬆️ How to Push (Upload Your Changes)
-Follow these three steps whenever you finish a feature or fix a bug to save it to GitHub:
+git init
+git remote add origin [https://github.com/Angeles-Carl-Martin/web-based-sched-system.git](https://github.com/Angeles-Carl-Martin/web-based-sched-system.git)
+2️⃣ How to PULL (Get latest files)
+Always do this before you start coding to get the newest updates:
 
-1. Stage your changes:
+Bash
+git pull origin main
+3️⃣ How to PUSH (Upload your work)
+Do these 3 steps whenever you want to save your code to GitHub:
+
+Step A: Prepare your files
 
 Bash
 git add .
-2. Commit with a message:
+Step B: Label your update
 
 Bash
-git commit -m "Describe your update here (e.g., Added login validation)"
-3. Send to GitHub:
+git commit -m "Describe your changes here"
+Step C: Send to GitHub
 
 Bash
 git push origin main
-⚠️ Common Troubleshooting
-Authentication: If asked for a password, use your GitHub Personal Access Token (PAT).
+💡 Quick Tips
+Check Status: Type git status to see which files you changed.
 
-Force Update: If you need to overwrite the GitHub repo with your local files (use with caution):
-
-Bash
-git push origin main --force
-
----
+Check Link: Type git remote -v to see your GitHub repository URL.
