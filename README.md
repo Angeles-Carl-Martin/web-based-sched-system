@@ -1,6 +1,9 @@
-## 🛠️ Git Synchronization Guide
+Markdown
+# Git Synchronization Guide 🛠️
 
 Use these commands to keep your local XAMPP files and the GitHub repository in sync.
+
+---
 
 ### ⬇️ How to Pull (Get Latest Updates)
 Run this command before you start coding to make sure you have the most recent version from the cloud:
@@ -9,15 +12,15 @@ git pull origin main
 ⬆️ How to Push (Upload Your Changes)
 Follow these three steps whenever you finish a feature or fix a bug to save it to GitHub:
 
-Stage your changes:
+1. Stage your changes:
 
 Bash
 git add .
-Commit with a message:
+2. Commit with a message:
 
 Bash
 git commit -m "Describe your update here (e.g., Added login validation)"
-Send to GitHub:
+3. Send to GitHub:
 
 Bash
 git push origin main
@@ -28,3 +31,5 @@ Force Update: If you need to overwrite the GitHub repo with your local files (us
 
 Bash
 git push origin main --force
+
+---
